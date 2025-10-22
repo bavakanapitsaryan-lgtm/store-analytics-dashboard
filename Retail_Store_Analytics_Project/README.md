@@ -25,6 +25,17 @@ All these insights are brought together into a **single Tableau dashboard**:
 
 ---
 
+## 🧰 Requirements
+
+- SQL environment (PostgreSQL 13+)
+- Tableau Public (latest version)
+- CSV files from the `raw_data/` folder
+- Any SQL client (e.g., DBeaver, MySQL Workbench, or pgAdmin)  
+  *(Project developed using DBeaver, but any client works.)*
+
+
+---
+
 ## ⚙️ Workflow
 1. **Data Preparation**
    - Structured raw CSV data using `Store_ddl.sql`.
