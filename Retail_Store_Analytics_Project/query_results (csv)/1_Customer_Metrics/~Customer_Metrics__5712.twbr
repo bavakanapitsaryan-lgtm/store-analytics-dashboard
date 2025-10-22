@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='1_Customer_Orders_Overview' inline='true' name='federated.0jguaof17qhcpb1buwloh1wwpn5p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1_Customer_Orders_Overview' name='textscan.08xzgdy0supycu1771mlg0fruuap'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/Levovo/Desktop/SuperHotLatest/1_Customer_Metrics/1_Customer_Orders_Overview.csv' dataRefreshTime='' directory='C:/Users/Levovo/Desktop/SuperHotLatest/1_Customer_Metrics' filename='C:/Users/Levovo/AppData/Local/Temp/TableauTemp/0o1vcf30fymujy15c3f9p0uajqzh/1_Customer_Orders_Overview.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.08xzgdy0supycu1771mlg0fruuap' name='1_Customer_Orders_Overview.csv' table='[1_Customer_Orders_Overvie#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:E99:no:A1:E99:1' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='customer_name' ordinal='0' />
+            <column datatype='integer' name='orders_count' ordinal='1' />
+            <column datatype='integer' name='product_quantity_ordered' ordinal='2' />
+            <column datatype='integer' name='overall_income_from_customer' ordinal='3' />
+            <column datatype='integer' name='average_order_cost' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1_Customer_Orders_Overview.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E99:no:A1:E99:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>392</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[customer_name]</local-name>
+            <parent-name>[1_Customer_Orders_Overview.csv]</parent-name>
+            <remote-alias>customer_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orders_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[orders_count]</local-name>
+            <parent-name>[1_Customer_Orders_Overview.csv]</parent-name>
+            <remote-alias>orders_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_quantity_ordered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_quantity_ordered]</local-name>
+            <parent-name>[1_Customer_Orders_Overview.csv]</parent-name>
+            <remote-alias>product_quantity_ordered</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_income_from_customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[overall_income_from_customer]</local-name>
+            <parent-name>[1_Customer_Orders_Overview.csv]</parent-name>
+            <remote-alias>overall_income_from_customer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_order_cost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_order_cost]</local-name>
+            <parent-name>[1_Customer_Orders_Overview.csv]</parent-name>
+            <remote-alias>average_order_cost</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='1_Customer_Orders_Overview.csv' datatype='table' name='[__tableau_internal_object_id__].[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]' role='measure' type='quantitative' />
+      <column caption='Average Order Cost' datatype='integer' name='[average_order_cost]' role='measure' type='quantitative' />
+      <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+      <column caption='Orders Count' datatype='integer' name='[orders_count]' role='measure' type='quantitative' />
+      <column caption='Overall Income From Customer' datatype='integer' name='[overall_income_from_customer]' role='measure' type='quantitative' />
+      <column caption='Product Quantity Ordered' datatype='integer' name='[product_quantity_ordered]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Levovo/AppData/Local/Temp/TableauTemp/#TableauTemp_1kkwu5s02wxhxl11nh4921t9lghp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/28/2025 11:00:47 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>customer_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>1_Customer_Orders_Overview.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>orders_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[orders_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orders_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>1_Customer_Orders_Overview.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_quantity_ordered</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[product_quantity_ordered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_quantity_ordered</remote-alias>
+              <ordinal>2</ordinal>
+              <family>1_Customer_Orders_Overview.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>92</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>overall_income_from_customer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[overall_income_from_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overall_income_from_customer</remote-alias>
+              <ordinal>3</ordinal>
+              <family>1_Customer_Orders_Overview.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_order_cost</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[average_order_cost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_order_cost</remote-alias>
+              <ordinal>4</ordinal>
+              <family>1_Customer_Orders_Overview.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='1_Customer_Orders_Overview.csv' id='1_Customer_Orders_Overview.csv_BAF75161670E4C9485808E70FE7B326F'>
+            <properties context=''>
+              <relation connection='textscan.08xzgdy0supycu1771mlg0fruuap' name='1_Customer_Orders_Overview.csv' table='[1_Customer_Orders_Overvie#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:E99:no:A1:E99:1' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='customer_name' ordinal='0' />
+                  <column datatype='integer' name='orders_count' ordinal='1' />
+                  <column datatype='integer' name='product_quantity_ordered' ordinal='2' />
+                  <column datatype='integer' name='overall_income_from_customer' ordinal='3' />
+                  <column datatype='integer' name='average_order_cost' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Order Cost'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1_Customer_Orders_Overview' name='federated.0jguaof17qhcpb1buwloh1wwpn5p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jguaof17qhcpb1buwloh1wwpn5p'>
+            <column caption='Average Order Cost' datatype='integer' name='[average_order_cost]' role='measure' type='quantitative' />
+            <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[customer_name]' derivation='None' name='[none:customer_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[average_order_cost]' derivation='Sum' name='[sum:average_order_cost:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:average_order_cost:qk]' value='C1033%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[none:customer_name:nk]</rows>
+        <cols>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:average_order_cost:qk]</cols>
+      </table>
+      <simple-id uuid='{A9A6019F-7D21-47FC-88B4-EC9B133E5C7F}' />
+    </worksheet>
+    <worksheet name='Orders Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1_Customer_Orders_Overview' name='federated.0jguaof17qhcpb1buwloh1wwpn5p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jguaof17qhcpb1buwloh1wwpn5p'>
+            <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[customer_name]' derivation='None' name='[none:customer_name:nk]' pivot='key' type='nominal' />
+            <column caption='Orders Count' datatype='integer' name='[orders_count]' role='measure' type='quantitative' />
+            <column-instance column='[orders_count]' derivation='Sum' name='[sum:orders_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0jguaof17qhcpb1buwloh1wwpn5p].[none:customer_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:orders_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[none:customer_name:nk]</rows>
+        <cols>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:orders_count:qk]</cols>
+      </table>
+      <simple-id uuid='{B5080FC9-496D-4458-A107-ED9FACE714E9}' />
+    </worksheet>
+    <worksheet name='Overall Income'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1_Customer_Orders_Overview' name='federated.0jguaof17qhcpb1buwloh1wwpn5p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jguaof17qhcpb1buwloh1wwpn5p'>
+            <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[customer_name]' derivation='None' name='[none:customer_name:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Income From Customer' datatype='integer' name='[overall_income_from_customer]' role='measure' type='quantitative' />
+            <column-instance column='[overall_income_from_customer]' derivation='Sum' name='[sum:overall_income_from_customer:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0jguaof17qhcpb1buwloh1wwpn5p].[none:customer_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:overall_income_from_customer:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:overall_income_from_customer:qk]' value='C1033%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[none:customer_name:nk]</rows>
+        <cols>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:overall_income_from_customer:qk]</cols>
+      </table>
+      <simple-id uuid='{8848153C-CE43-497E-9E23-13355FADDCDE}' />
+    </worksheet>
+    <worksheet name='Products Ordered'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1_Customer_Orders_Overview' name='federated.0jguaof17qhcpb1buwloh1wwpn5p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0jguaof17qhcpb1buwloh1wwpn5p'>
+            <column caption='Customer Name' datatype='string' name='[customer_name]' role='dimension' type='nominal' />
+            <column-instance column='[customer_name]' derivation='None' name='[none:customer_name:nk]' pivot='key' type='nominal' />
+            <column caption='Product Quantity Ordered' datatype='integer' name='[product_quantity_ordered]' role='measure' type='quantitative' />
+            <column-instance column='[product_quantity_ordered]' derivation='Sum' name='[sum:product_quantity_ordered:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[none:customer_name:nk]</rows>
+        <cols>[federated.0jguaof17qhcpb1buwloh1wwpn5p].[sum:product_quantity_ordered:qk]</cols>
+      </table>
+      <simple-id uuid='{E5384A11-BE49-4F27-858D-B05B4DB61995}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name=' Customer Metrics'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='26848' id='3' name='Orders Count' w='97538' x='1231' y='985'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24384' id='5' name='Products Ordered' w='97538' x='1231' y='27833'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='22537' id='6' name='Overall Income' w='97538' x='1231' y='76478'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24261' id='7' name='Average Order Cost' w='97538' x='1231' y='52217'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='9' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98030' id='8' param='vert' type-v2='layout-flow' w='97538' x='1231' y='985'>
+                <zone fixed-size='223' h='26848' id='3' is-fixed='true' name='Orders Count' w='97538' x='1231' y='985'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='202' h='24384' id='5' is-fixed='true' name='Products Ordered' w='97538' x='1231' y='27833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='201' h='24261' id='7' is-fixed='true' name='Average Order Cost' w='97538' x='1231' y='52217'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='22537' id='6' is-fixed='true' name='Overall Income' w='97538' x='1231' y='76478'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AC7C62C6-6CB8-40BD-94D4-8AA610F9B4F7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Orders Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{20A3B79F-4A7B-4EA7-8DAB-D4C4942049FB}' />
+    </window>
+    <window class='dashboard' maximized='true' name=' Customer Metrics'>
+      <viewpoints>
+        <viewpoint name='Average Order Cost' />
+        <viewpoint name='Orders Count' />
+        <viewpoint name='Overall Income' />
+        <viewpoint name='Products Ordered' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{2B40DD40-54E5-4E9D-8D12-91AABEA6603C}' />
+    </window>
+    <window class='worksheet' name='Products Ordered'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{537858FD-1A88-43D2-96E2-9A8B2BFC5DBC}' />
+    </window>
+    <window class='worksheet' name='Overall Income'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1DA283CC-FBAC-49EE-A487-8400E8EEF5BB}' />
+    </window>
+    <window class='worksheet' name='Average Order Cost'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7C594BA9-DBCF-4452-95C1-57A16870E511}' />
+    </window>
+  </windows>
+</workbook>
