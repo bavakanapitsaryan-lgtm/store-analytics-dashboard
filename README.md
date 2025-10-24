@@ -63,6 +63,30 @@ These insights support better marketing strategies, inventory planning, and work
 
 ## Project Structure
 
+Retail_Store_Analytics_Project/
+├── queries/                         # SQL scripts for analysis by domain
+│   ├── 1_customer_metrics.sql       # Customer-related insights
+│   ├── 2_product_metrics.sql        # Product and sales performance analysis
+│   └── 3_hr_metrics.sql             # HR performance metrics
+│
+├── query_results (csv)/             # Exported query outputs
+│   ├── 1_Customer_Metrics/
+│   ├── 2_Product_Metrics/
+│   └── 3_HR_Metrics/
+│
+├── raw_data/                        # Source data and supporting documentation
+│   ├── _ER Diagram.pdf              # Entity–Relationship diagram
+│   ├── customers.csv
+│   ├── employees.csv
+│   ├── offices.csv
+│   ├── orderdetails.csv
+│   ├── orders.csv
+│   ├── payments.csv
+│   └── productlines.csv
+│
+├── Store_Dashboard.twbx             # Tableau workbook combining all dashboards
+├── _Store_ddl.sql                   # Database schema creation script
+├── README.md                        # Project documentation
 
 ---
 
@@ -77,7 +101,7 @@ The dashboard provides:
 ---
 
 ## Author
-**[Your Name]**  
+**Bavakan Apitsaryan**  
 Data Analyst | SQL & Tableau Enthusiast  
 - [LinkedIn](https://www.linkedin.com/in/bavakan-apitsaryan-880b3011a/)  
 - [GitHub](https://github.com/bavakanapitsaryan-lgtm)  
